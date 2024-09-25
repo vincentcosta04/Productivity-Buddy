@@ -1,0 +1,80 @@
+<!-- popup.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productivity Buddy</title>
+  <!-- Link to your CSS stylesheet -->
+  <link rel="stylesheet" type="text/css" href="popup.css">
+  <!-- Link the JavaScript logic to update the popup -->
+  <script src="popup.js"></script>
+</head>
+<body>
+  <!-- Title of the popup -->
+  <h2>Productivity Buddy</h2>
+
+  <!-- Add this div for status messages -->
+  <div id="statusMessage"></div>
+  
+  <!-- Section to add websites to the blocked list -->
+  <fieldset>
+    <legend>Add Website:</legend>
+    <label for="websiteInput">Website URL:</label>
+    <!-- Input for user to enter a website -->
+    <input type="text" id="websiteInput" placeholder="Enter website URL" aria-label="Website URL">
+    <!-- Button to submit the input -->
+    <button id="addWebsiteButton" class="addButton">Add Website</button>
+  </fieldset>
+
+  <!-- List of blocked websites that gets updated -->
+  <h3>Blocked Websites</h3>
+  <ul id="blockedList" aria-live="polite"></ul>
+
+  <!-- Section of the popup to add times -->
+  <fieldset>
+    <legend>Add Times:</legend>
+    <label for="startTime">Start Time:</label>
+    <!-- Input for the start time -->
+    <input type="time" id="startTime" aria-label="Start Time">
+
+    <label for="endTime">End Time:</label>
+    <!-- Input for the end time -->
+    <input type="time" id="endTime" aria-label="End Time">
+
+    <!-- Checkbox for days -->
+    <label for="days">Select Days:</label>
+    <div id="days">
+      <!-- Checkboxes for each day of the week -->
+      <input type="checkbox" id="daySunday" value="Sunday">
+      <label for="daySunday">Sunday</label>
+
+      <input type="checkbox" id="dayMonday" value="Monday">
+      <label for="dayMonday">Monday</label>
+
+      <input type="checkbox" id="dayTuesday" value="Tuesday">
+      <label for="dayTuesday">Tuesday</label>
+
+      <input type="checkbox" id="dayWednesday" value="Wednesday">
+      <label for="dayWednesday">Wednesday</label>
+
+      <input type="checkbox" id="dayThursday" value="Thursday">
+      <label for="dayThursday">Thursday</label>
+
+      <input type="checkbox" id="dayFriday" value="Friday">
+      <label for="dayFriday">Friday</label>
+
+      <input type="checkbox" id="daySaturday" value="Saturday">
+      <label for="daySaturday">Saturday</label>
+    </div>
+
+    <!-- Button to submit the input -->
+    <button id="addTimeButton" class="addButton">Add Time</button>
+  </fieldset>
+
+  <!-- List of times and days that gets updated -->
+  <h3>Blocked Times</h3>
+  <ul id="blockedTimesList" aria-live="polite"></ul>
+</body>
+</html>
