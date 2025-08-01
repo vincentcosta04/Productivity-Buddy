@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Productivity Buddy",
+  "version": "3.0",
+  "description": "Block distracting websites for improved productivity",
+  "permissions": ["storage", "webNavigation", "tabs", "activeTab"],
+  "browser_action": {
+    "default_icon": {"128": "icon.png"},
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "128": "icon.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }        
+}
+
+
+
+
+
+

@@ -1,0 +1,105 @@
+/* popup.css */
+
+/* Set general styles for the body of the popup */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 20px;
+  width: 400px; /* Set the desired width for the entire popup */
+}
+
+/* Media query for adjusting styles for smaller screens */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+    width: 300px; /* Adjust the width for smaller screens if needed */
+  }
+}
+
+/* Style for the main title */
+h2 {
+  color: #333;
+}
+
+/* Style for fieldsets (used for grouping form elements) */
+fieldset {
+  margin-bottom: 20px;
+}
+
+/* Style for fieldsets (used for grouping form elements) */
+legend {
+  font-weight: bold;
+}
+
+/* Style for labels (text description of form elements) */
+label {
+  margin-right: 10px;
+}
+
+/* Style for input fields and buttons */
+input,
+button {
+  margin-bottom: 10px;
+}
+
+/* Style for buttons with class 'addButton' */
+.addButton {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px; /* Adjust padding for larger buttons */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; /* Increase font size for better visibility */
+  cursor: pointer;
+}
+
+/* Hover effect for buttons with class 'addButton' */
+.addButton:hover {
+  background-color: #45a049;
+}
+
+/* Style for unordered lists */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style for list items */
+li {
+  margin-bottom: 10px; /* Increase margin for better spacing between list items */
+}
+
+/* Style for error messages */
+.error {
+  color: #FF0000;
+}
+
+/* Style for success messages */
+.success {
+  color: #008000;
+}
+
+/* Style for buttons with class 'removeButton' */
+.removeButton {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 12px; /* Adjust padding for larger buttons */
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px; /* Increase font size for better visibility */
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Hover effect for buttons with class 'removeButton' */
+.removeButton:hover {
+  background-color: #d32f2f;
+}
+
+
+
+
+  
